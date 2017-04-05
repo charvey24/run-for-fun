@@ -1,8 +1,11 @@
 Rails.application.routes.draw do
+  get 'sessions/new'
   
   root 'home#home'
-  match 'about', to: 'about#about', via: :get
-  match 'blog', to: 'blog#blog', via: :get
-  match 'shop', to: 'shop#shop', via: :get
   
+  get '/about', to: 'about#about'
+  get '/blog', to: 'blog#blog'
+  get '/shop', to: 'shop#shop'
+  
+  resources :users
 end
