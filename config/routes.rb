@@ -8,4 +8,5 @@ Rails.application.routes.draw do
   get '/shop', to: 'shop#shop'
   
   resources :users
+  resources :microposts,          only: [:create, :destroy]
 end
