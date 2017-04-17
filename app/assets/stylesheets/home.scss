@@ -11,6 +11,18 @@ body {
     background-color: #4d4d4d;
 }
 
+#navbar
+{
+    display: inline;
+    list-style-type: none;
+}
+
+.dropdown-menu
+{
+    display: block;
+    list-style-type: none;
+}
+
 .topnav {
     background-color: #333;
     overflow: hidden;
@@ -44,4 +56,14 @@ body {
 {
     display: block;
     margin: auto;
+}
+
+.users {
+  list-style: none;
+  margin: 0;
+  li {
+    overflow: auto;
+    padding: 10px 0;
+    border-bottom: 1px solid #A9A9A9;
+  }
 }
